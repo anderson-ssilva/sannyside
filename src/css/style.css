@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 60px;
-    background: url(/src/images/image-header.jpg);
+    background: url(../images/image-header.jpg);
 }
 
 .header .logo{
@@ -111,7 +111,7 @@ main .go{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(/src/images/image-header.jpg) center center no-repeat;
+    background: url(../images/image-header.jpg) center center no-repeat;
     height: calc(100vh - 120px);
     background-size: cover;
 
@@ -152,7 +152,7 @@ main .go img{
 @media(max-width: 425px) {
 
     main .go{
-        background: url(/src/images/mobile/image-header.jpg) center center no-repeat;
+        background: url(../images/mobile/image-header.jpg) center center no-repeat;
         background-size: cover;
 
     }
