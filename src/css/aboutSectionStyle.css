@@ -1,0 +1,103 @@
+/* ABOUT SCTION */
+.texto1{
+    grid-area: texto1;
+}
+
+.texto2{
+    grid-area: texto2;
+}
+
+.imagem1{
+    grid-area: imagem1;
+}
+
+.imagem2{
+    grid-area: imagem2;
+}
+
+main .about{
+    display: grid;
+    grid:
+    "texto1 imagem1" 720px
+    "imagem2 texto2" 720px
+    /auto;
+    height: 100vh;
+}
+
+main .about .imagem1{
+    background: url(../images/desktop/image-transform.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+main .about .imagem2{
+    background: url(../images/desktop/image-stand-out.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+main .about .texto1,
+main .about .texto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+
+main .about .texto1 h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+
+main .about .texto2 h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+main .about .texto1 p,
+main .about .texto2 p{
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-bottom: 40px;
+    transition: 0.5s;
+}
+
+main .about .texto1 p a{
+    text-transform: uppercase;
+    color: black;
+    border-bottom: solid 5px hsl(51, 100%, 49%);
+    transition: 0.5s;
+}
+
+main .about .texto2 p a{
+    text-transform: uppercase;
+    color: black;
+    border-bottom: solid 5px hsl(7, 99%, 70%);
+}
+
+main .about .texto1 p a:hover,
+main .about .texto2 p a:hover{
+    opacity: 0.8;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+    main .about{
+        display: grid;
+        grid:
+        "texto1" 720px
+        "imagem1" 720px
+        "texto2" 720px
+        "imagem2" 720px
+        /auto;
+        height: 100vh;
+    }
+}
+
+/* ////////// */
