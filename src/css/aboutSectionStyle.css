@@ -59,13 +59,16 @@ main .about .texto2 h1{
 
 main .about .texto1 p,
 main .about .texto2 p{
-    font-size: 1.6rem;
-    font-weight: lighter;
+    font-size: 2rem;
     margin-bottom: 40px;
+    color: gray;
     transition: 0.5s;
+    font-family: 'Barlow', sans-serif;
+    
 }
 
 main .about .texto1 p a{
+    font-weight: bolder;
     text-transform: uppercase;
     color: black;
     border-bottom: solid 5px hsl(51, 100%, 49%);
@@ -73,6 +76,7 @@ main .about .texto1 p a{
 }
 
 main .about .texto2 p a{
+    font-weight: bolder;
     text-transform: uppercase;
     color: black;
     border-bottom: solid 5px hsl(7, 99%, 70%);
@@ -91,13 +95,47 @@ main .about .texto2 p a:hover{
     main .about{
         display: grid;
         grid:
-        "texto1" 720px
         "imagem1" 720px
-        "texto2" 720px
+        "texto1" 720px
         "imagem2" 720px
+        "texto2" 720px
         /auto;
         height: 100vh;
     }
+}
+
+@media(max-width: 425px){
+    main .about .imagem1{
+        background: url(../images/mobile/image-transform.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    
+    main .about .imagem2{
+        background: url(../images/mobile/image-stand-out.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    main .about .texto1 h1,
+    main .about .texto2 h1 {
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    main .about .texto1 p,
+     main .about .texto2 p {
+        text-align: center;
+    }
+
+    main .about .texto1, 
+    main .about .texto2 {
+        align-items: center;
+        padding: 30px;
+    }
+}
+
+@media(max-width: 375px){
+
 }
 
 /* ////////// */
