@@ -42,9 +42,8 @@
 }
 
 .header .menu li a:hover{
-    opacity: 0.8;
-    letter-spacing: 2px;
-    transition:  0.7s ease-in-out;
+    color:  hsl(51, 100%, 49%);
+    transition:  0.3s ease-in-out;
 }
 
 .header .menu li span a{
@@ -52,6 +51,11 @@
     text-transform: uppercase;
     color: black;
     border-radius: 30px;
+}
+
+.header .menu li span a:hover{
+    background-color:  hsl(51, 100%, 49%);
+    color: white;
 }
 
 /* RESPONSIVE */
